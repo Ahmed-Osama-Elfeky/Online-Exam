@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn-main{
+  @apply text-white bg-[#4461F2] rounded-2xl p-2  w-full
+}
+
+.poppins{
+  font-family: "Poppins", sans-serif;
+
+}
+.title{
+  font-size: 50px;
+
+}
+
+.poppins-400{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+}
+
+.hr-with-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hr-with-text::before,
+.hr-with-text::after {
+  content: '';
+  flex-grow: 1;
+  border-top: 1px solid #E7E7E7;
+}
+
+.hr-with-text span {
+  padding: 0 10px;
+}
+
+.left{
+  box-shadow: #0000001A  5px 0px ;
+
+
+
+}

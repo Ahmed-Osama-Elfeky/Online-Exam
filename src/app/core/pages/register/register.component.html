@@ -1,0 +1,32 @@
+
+
+<h1 class="font-bold text-[#000000] mt-[31px] mb-[31px]">Sign Up</h1>
+
+
+<form>
+  <div class="mb-6">
+    <input type="text"  id="fname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="First Name" required />
+</div>
+<div class="mb-6">
+  <input type="text"  id="lname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Last Name" required />
+</div>
+
+    <div class="mb-6">
+        <input type="email"  id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Email" required />
+    </div>
+    <div class="mb-6 relative ">
+        <input type="password" id="password" class="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Password " required />
+        <span class="absolute top-2 right-3  "><i class="fa-solid text-[#949BA5] fa-eye"></i></span>
+    </div>
+    <div class="mb-6 relative ">
+      <input type="password" id="password" class="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Confirm Password " required />
+      <span class="absolute top-2 right-3  "><i class="fa-solid text-[#949BA5] fa-eye"></i></span>
+  </div>
+
+    <div class=" mt-4 mb-10 mx-auto  text-center cursor-pointer  ">
+      Already have an account?
+        <a [routerLink]="['/login']" class="  text-sm text-blue-600 hover:text-blue-800 dark:text-gray-400 dark:hover:text-gray-600">Login</a>
+      </div>
+    <button type="submit" class=" btn-main">Create Account</button>
+
+</form>

@@ -43,6 +43,14 @@
 .left{
   box-shadow: #0000001A  5px 0px ;
 
+}
 
+
+.my-valid{
+  @apply border border-4 border-emerald-500 rounded-md
+}
+
+.my-invalid{
+  @apply border border-4 border-red-500 rounded-md
 
 }

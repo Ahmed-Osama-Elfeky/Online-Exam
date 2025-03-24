@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms'
 import { AuthApiService } from 'auth-api';
+import { selectUser } from '../../../store/auth.selector';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +11,13 @@ import { AuthApiService } from 'auth-api';
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
-export class LoginComponent {
+export class LoginComponent  {
+
+
+
+
+
+
 
   apiError!:string;
 
@@ -20,7 +28,7 @@ password: new FormControl(null , [Validators.required, Validators.pattern(/^((?=
 
 
   })
-  constructor(private _AuthApiService:AuthApiService){}
+  constructor(private _AuthApiService:AuthApiService , private store: Store){}
 
 login():void{
   console.log(this.loginForm.value);

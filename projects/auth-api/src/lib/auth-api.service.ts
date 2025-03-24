@@ -1,3 +1,4 @@
+import { jwtDecode } from './../../../../node_modules/jwt-decode/build/cjs/index.d';
 
 
 
@@ -15,6 +16,7 @@ import { observableToBeFn } from 'rxjs/internal/testing/TestScheduler';
 import { resetData } from './interface/resetData';
 import { forgetRes } from './interface/forgetAPIData';
 import { codeRes } from './interface/ResetAPIData ';
+import { Store } from '@ngrx/store';
 
 
 
@@ -22,14 +24,14 @@ import { codeRes } from './interface/ResetAPIData ';
   providedIn: 'root'
 })
 export class AuthApiService implements AuthAPI  {
-  userInfo:any;
+  user:any;
 
   constructor(private _HttpClient:HttpClient,private _AuthAPIAdaptorService:AuthAPIAdaptorService) { }
 
   // decodeToken(){
   //   if(sessionStorage.getItem('token')){
 
-  //   this.userInfo= jwtDecode(sessionStorage.getItem('token')!);
+  //   this.user= jwtDecode(sessionStorage.getItem('token')!);
   //   }
   // }
    login(data: LoginData ): Observable<LoginRes> {
